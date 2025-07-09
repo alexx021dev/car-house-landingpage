@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <!-- ========== Heade-section ========== -->
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>car house Landing Page</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Add this inside your <head> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 </head>
-
 <body>
+      <!-- ========== header/navbar ========== -->
     <header>
+        <div class="container">
         <h1 class="logo">Car<span>House</span></h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#hero-section">home</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a href="#feature-section">feature</a></li>
-                <li><a href="#about">about</a></li>
+        <input type="checkbox" id="menu-toogle" class="menu-toogle-checkbox" />
+        <label for="menu-toogle" class="menu-icon" aria-label="menu-toogle">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav aria-label="main-naviagtion">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav_links">home</a></li>
+                <li><a href="#contact" class="nav_links">contact</a></li>
+                <li><a href="#feature" class="nav_links">feature</a></li>
+                <li><a href="#about" class="nav_links">about</a></li>
             </ul>
         </nav>
+        </div>
     </header>
-    <section class="hero-section">
-        <div class="hero-text">
-            <h2>"Unmatched Elegance. Absolute Power."</h2>
-            <p>Experience the bold presence of black luxury — where craftsmanship meets performance.</p>
-        </div>
-        <div class="hero-action">
-            <img src="assets/images/cars.jpg" class="hero-image" alt="lexury-black-car">
-            <button>buy</button>
-        </div>
-        </section>
-        <section class="feature-section">
-            <article class="cards">
-                <img src="assets/images/wheels.jpg" alt="nice-wheels">
-                <div class="text">
+         <!-- ========== main-content ========== -->
+    <main>
+         <!-- ========== hero-section ========== -->
+         <section class="hero" id="home">
+            <div class="hero-text">
+                <h3>Unmatched Elegance. Absolute Power.</h3>
+                <p>Experience the bold presence of black luxury where craftsmanship meets performance.</p>
+            </div>
+            <div class="hero-action">
+                <img src="assets/images/cars.jpg" class="hero-image" alt="lexury-black-car">
+                <a href="#" class="hero_btn">purchase</a>
+            </div>
+        </section> 
+          <!-- ========== feature-cards ========== -->
+         <section class="features" id="feature">
+            <article class="feature-card" >
+                <img src="assets/images/wheels.jpg" alt="nice wheels" class="feature-card_image">
+                <div class="feature-card_text">
                     <h3>Bold Rims</h3>
                     <p>Designed for both performance and unmatched street style.</p>
                 </div>
             </article>
-
+    
             <article class="cards">
-                <img src="assets/images/headlights.jpg" alt="head-lights">
-                <div class="text">
+                <img src="assets/images/headlights.jpg" alt="head lights" class="feature-card_image">
+                <div class="feature-card_text">
                     <h3>Headlights</h3>
                     <p>Iconic design that lights up the night with power.</p>
                 </div>
             </article>
-
+    
             <article class="cards">
-                <img src="assets/images/interior.jpg" alt="interior-view">
-                <div class="text">
+                <img src="assets/images/interior.jpg" alt="interior view" class="feature-card_image">
+                <div class="feature-card_text">
                     <h3>Luxury Cockpit</h3>
                     <p>Premium leather and futuristic dashboard at your fingertips.</p>
                 </div>
             </article>
-        </section>
-        <footer>
-            <div class="container">
-                <div>
-                    <div class="company">B<span>M</span>W</div>
-                    <p>"Driven by design. Powered by excellence."</p>
-                </div>
-                <div class="about">
-                    <h3>Links</h3>
-                    <ul>
-                        <li><a href="#terms">terms of service</a></li>
-                        <li><a href="#terms">privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="contact">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li><a href="#facebook"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#instagram"><i class="fab fa-instagram"></i> </a></li>
-                        <li><a href="#whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-                        <li><a href="#twitter"><i class="fab fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </footer>
-
+        </section> 
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div>
+                <div class="company">B<span>M</span>W</div>
+                <p>"Driven by design. Powered by excellence."</p>
+            </div> 
+            <!-- ========== about section ========== -->    
+            <div class="about"id="about" >
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#terms">terms of service</a></li>
+                    <li><a href="#terms">privacy policy</a></li>
+                </ul>
+            </div> 
+            <!-- ========== contact section ========== -->
+             <div class="contact" id="contact">
+                <h3 >Follow Us</h3>
+                <ul>
+                    <li><a href="#facebook" aria-label="face-book"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#instagram" aria-label="instagram"><i class="fab fa-instagram"></i> </a></li>
+                    <li><a href="#whatsapp" aria-label="fa-whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#twitter" aria-label="twitter"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div> 
+        </div>
+    </footer>
+    
 </body>
-
 </html>
