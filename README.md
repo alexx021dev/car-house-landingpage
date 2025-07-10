@@ -4,9 +4,10 @@ A modern, responsive landing page for a luxury car brand. Built with HTML and CS
 
 ## Features
 
-- Responsive layout
-- Modern UI design
-- Clean codebase
+- Responsive layout  improved typography and animations 
+- Modern UI design 
+- Clean codebase clear semantic stucture than v-2 
+
 
 ## Live Demo
 
