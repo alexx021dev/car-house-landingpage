@@ -15,9 +15,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: url(assets/images/back-ground.jpg) no-repeat center/cover;
   color: black;
-  font-size: clamp(1rem, 2vw, 1.4rem);
-
-
+  font-size: clamp(1rem, 2vw, 2.2rem);
 }
 .menu-toggle-checkbox {
     display: none;
